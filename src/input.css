@@ -1,1 +1,40 @@
 @import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+@theme {
+    --color-zelena: #74C69D;
+    --font-sans: Work Sans,sans-serif;
+    --font-crimson: Crimson Text,serif;
+    --color-seda: rgba(33, 37, 41, 0.50);
+    --color-tmavaseda: (33, 37, 41, 0.75);
+}
+h1 {
+    @apply text-black font-crimson font-bold leading-tight text-left; 
+}
+
+h2 {
+    @apply text-zelena font-sans font-bold leading-tight text-base tracking-[0.3rem];
+}
+
+.position{
+    @apply font-sans mb-4 leading-tight text-tmavaseda text-sm text-left opacity-75;
+}
+
+
+.popis {
+    @apply text-left font-sans text-base opacity-50 text-seda;
+}
+
+.button {
+    @apply bg-black text-white px-4  py-2 rounded font-sans text-xl w-42 h-12;
+}
+
+.stin{
+    box-shadow: 3px 4px 12px 1px rgba(0, 0, 0, 0.25);
+}
+
+.name {
+    @apply text-black font-crimson font-bold mb-4 leading-tight text-left text-2xl;
+}
